@@ -1,0 +1,291 @@
+.bk {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #f6f8fa;
+}
+
+.card {
+  padding: 1rem;
+  background-color: rgba(31, 31, 31, 0.9);
+  margin: 2rem auto;
+  width: 70rem;
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.chart {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #fafafa;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+}
+
+.chartBar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartBarInner {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chartBarFill {
+  background-color: #026ef2;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.chartBarLabel {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.expensesFilter {
+  color: white;
+  padding: 0 1rem;
+}
+
+.expensesFilterControl {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.expensesFilter label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.expensesFilter select {
+  font: inherit;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.expenseDate {
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+  height: 7rem;
+  border: 1px dashed #ececec;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.expenseDateMonth {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.expenseDateYear {
+  font-size: 1.6rem;
+}
+
+.expenseDateDay {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.newExpenseControls {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.newExpenseControl label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #f9f9f9;
+  display: block;
+}
+
+.newExpenseControl input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.newExpenseActions {
+  text-align: right;
+}
+
+.expenseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
+  padding: 0.5rem;
+  margin: 1rem auto;
+  /* border-radius: 12px; */
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.expenseItemDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.expenseItem h2 {
+  color: #3a3a3a;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.expenseItemPrice {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: #28a8ea;
+  padding: 0.5rem 1rem;
+}
+
+.expenseItemPricee {
+  display: grid;
+  place-items: center;
+  width: 25%;
+  height: 50px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #1490df, #28a8ea);
+  background-size: 200%;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+.expenseItemPricee:hover {
+  background-position: right;
+}
+
+@media (min-width: 580px) {
+  .expenseItemDescription {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .expenseItemDescription h2 {
+    font-size: 1.75rem;
+  }
+
+  .expenseItemPrice {
+    font-size: 1.75rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.expensesList {
+  list-style: none;
+  padding: 0;
+}
+
+.expensesListFallback {
+  color: white;
+  text-align: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.expenses {
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 25px;
+}
+
+.newExpense {
+  // background-color: #a892ee;
+  background-color: rgba(31, 31, 31, 0.9);
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 70rem;
+  max-width: 95%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.newExpense label {
+  font-size: 1.6rem;
+}
+
+.newExpense input {
+  margin: 0 auto;
+  width: 30rem;
+  height: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+.newExpense button {
+  font-family: 'Source Sans Pro', sans-serif;
+  place-items: center;
+  width: 25%;
+  height: 50px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #1490df, #28a8ea);
+  background-size: 200%;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.newExpense button:hover {
+  background-position: right;
+}
+
+.newExpense button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.newExpense button.alternative:hover,
+.newExpense button.alternative:active {
+  background-color: #ddb3f8;
+}
