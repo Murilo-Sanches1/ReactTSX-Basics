@@ -1,0 +1,22 @@
+{
+  "PostsData": [
+    {
+      "title": "NodeJS",
+      "body": "Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.[6][7] O runtime de JavaScript é constituído pelos seguintes comandos: node package manager (npm), e npx (node package extractor),o npx foi introduzido na versão 5.2.0 do JavaScript, pois a antes deveria ser instalado individualmente; onde o primeiro tem o propósito de executar código armazenado num package de nodejs, instalando o software globalmente ou localmente, já o segundo tem o propósito de instalar a nível local o código instalado globalmente. Um exemplo disso é o npx create-react-app que tem como propósito instalar a nível local um template vazio de um site de react, pronto a ser usado, através de uma fórmula instalada com npm.",
+      "author": "Sanches",
+      "id": 2
+    },
+    {
+      "title": "Express",
+      "body": "Express.js (ou apenas Express) é um framework para Node.js que fornece recursos mínimos para construção de servidores web (HTTP).[2] Foi lançado como software livre e de código aberto sob a Licença MIT.[3] É um dos mais populares frameworks para servidores em Node.js.[4]",
+      "author": "Sanches",
+      "id": 3
+    },
+    {
+      "title": "ReactJS",
+      "body": "O React (também denominado React.js ou ReactJS) é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.\n\nCriado em 2011 pelo Facebook, com a criação de views declarativas e baseando-se em componentes, possuía o intuito de otimizar a atualização e a sincronização de atividades simultâneas no feed de notícias da rede social e melhorar a manutenção de código.\n\nÉ mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.[5]",
+      "author": "Murilo",
+      "id": 4
+    }
+  ]
+}

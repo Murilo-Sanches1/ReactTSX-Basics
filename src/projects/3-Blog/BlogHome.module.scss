@@ -1,0 +1,103 @@
+@import '../../App.scss';
+
+.navbar {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  max-width: 80rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  font-family: $merri;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 1.6rem;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 70rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 1rem 1.6rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview h2 {
+  font-size: 2rem;
+  color: #f1356d;
+  margin-bottom: 0.8rem;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 2rem;
+  color: #f1356d;
+  margin-bottom: 1rem;
+}
+.blog-details div {
+  margin: 2rem 0;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.create p {
+  max-width: 100%;
+  overflow: hidden;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 2rem;
+  color: #f1356d;
+  margin-bottom: 3rem;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}

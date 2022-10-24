@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "jsonserver": "npx json-server --watch src/projects/3-Blog/data/db.json --port 8000"
   },
   "eslintConfig": {
     "extends": [
