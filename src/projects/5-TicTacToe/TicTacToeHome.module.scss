@@ -1,0 +1,155 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  background-color: #1a2b33;
+
+  &-flex {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: calc(100% - 5rem);
+
+    @media screen and (max-width: 576px), screen and (max-width: 1512px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.game-status {
+  flex: 0.5;
+
+  h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    color: aliceblue;
+  }
+
+  &-X {
+    color: #2fc3bd;
+    margin-left: 1rem;
+  }
+
+  &-O {
+    color: #f4b63a;
+    margin-left: 1rem;
+  }
+
+  & .btn-status {
+    width: 20rem;
+    height: 7.5rem;
+    border-radius: 5px;
+    margin: 2.5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+    margin-left: 5rem;
+
+    @media screen and (max-width: 620px) {
+      font-size: 1.6rem !important;
+      height: 5rem;
+      display: flex;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 868px) {
+      font-size: 2rem;
+      width: auto;
+      margin: 0;
+      margin: 1rem 2rem;
+      height: 5rem;
+      padding: 1rem;
+    }
+  }
+
+  &-X-winner {
+    background-color: #2fc3bd;
+  }
+
+  &-draw {
+    background-color: #eee;
+    color: black !important;
+  }
+
+  &-O-winner {
+    background-color: #f4b63a;
+  }
+
+  &-restart {
+    background: none;
+    border: 2px solid black;
+    border-radius: 20px !important;
+    background-color: #eee;
+    color: black !important;
+
+    &:hover.x {
+      background-color: #2fc3bd;
+      color: aliceblue !important;
+      border: none;
+    }
+
+    &:hover.o {
+      background-color: #f4b63a;
+      color: aliceblue !important;
+      border: none;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    flex: 0.25;
+  }
+}
+
+.table-grid {
+  flex: 0.5;
+  display: grid;
+  grid-template-columns: repeat(3, 17.5rem);
+  grid-template-rows: repeat(3, 17.5rem);
+  gap: 2.5rem;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  // align-content: center;
+
+  &.game-over {
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: 620px) {
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    gap: 1.5rem;
+  }
+
+}
+
+.cell {
+  // width: 15rem;
+  // height: 15rem;
+  background-color: #1e3640;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: "Merriweather", serif;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &.X {
+    color: #2fc3bd;
+    cursor: not-allowed;
+  }
+
+  &.O {
+    color: #f4b63a;
+    cursor: not-allowed;
+  }
+}

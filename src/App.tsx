@@ -7,6 +7,7 @@ import ToDoHome from './projects/1-ToDo/ToDoHome';
 import ExpenseTrackerHome from './projects/2-ExpenseTracker/ExpenseTrackerHome';
 import BlogHome from './projects/3-Blog/BlogHome';
 import MemoryGameHome from './projects/4-MemoryGame/MemoryGameHome';
+import TicTacToeHome from './projects/5-TicTacToe/TicTacToeHome';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           ></Route>
           <Route path="/blog/*" element={<BlogHome />}></Route>
           <Route path="/jogo-da-memoria" element={<MemoryGameHome />}></Route>
+          <Route path="/jogo-da-velha" element={<TicTacToeHome />}></Route>
         </Routes>
       </Router>
     </>
