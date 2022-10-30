@@ -9,3 +9,7 @@ Vários projetinhos para eu me aprofundar em React com TypeScript
 2 - Expense Tracker
 
 3 - React Blog
+
+4 - Memory Game
+
+5 - Tic Tac Toe
