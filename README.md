@@ -1,4 +1,4 @@
-# React-TypeScript__Aprendendo
+# ReactTSX-Basics
 
 Vários projetinhos para eu me aprofundar em React com TypeScript
 
